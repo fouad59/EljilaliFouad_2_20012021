@@ -1,31 +1,35 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
         <title>Reservia</title>
         <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+        <script src="https://kit.fontawesome.com/42fbe59e45.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <header>
-            <img src="ProjetReservia/images/logo/Reservia@3x.png" alt="logo" />
-            <a href="#Hébergements">Hébergements</a>
-            <a href="#Activités">Activités</a>
-            <a href="#">S'inscrire</a>
-
+            <nav>
+                <img src="ProjetReservia/images/logo/Reservia@3x.png" alt="logo" />
+                <p>
+                    <a href="#Hébergements">Hébergements</a>
+                    <a href="#Activités">Activités</a>
+                    <a href="#">S'inscrire</a>
+                </p>
+            </nav>
         </header>
         <nav>
-            <p>Trouvez votre hébergement pour des vacances de rêve<br />
-            En plein centre ville ou en pleine nature</p>
+            <p><strong>Trouvez votre hébergement pour des vacances de rêve</strong><br />
+            En plein centre ville ou en pleine nature
+            </p>
             <form action="traitement.php">
-                <p>
+                <div id="button">
                     <label><i class="fas fa-map-marker-alt"></i></label>
-                    <input type="text" name="Ville" placeholder="Marseille,France" >
+                    <input type="text" name="Ville" placeholder="Marseille, France" >
                     <input type="submit" value="Rechercher" />
-                </p>
+                </div>
             </form>
-               
+                <div id="filtre">
                    Filtres
                     <ul>
                         <li><i class="fas fa-money-bill-wave" style="color: #0065FC"></i><a href="#">Économiques</a></li>
@@ -33,56 +37,58 @@
                         <li><i class="fas fa-heart" style="color: #0065FC"></i><a href="#">Romantique</a></li>
                         <li><i class="fas fa-dog" style="color: #0065FC"></i><a href="#">Animaux autorisés</a></li>
                     </ul>
-                
+                </div>
 
-            <i class="fas fa-info" style="color: #0065FC"></i> Plus de 500 logements sont disponibles dans cette ville  
+                    <i class="fa fa-info-circle" style="color: #0065FC"></i> Plus de 500 logements sont disponibles dans cette ville  
         </nav>
 
-        <section>
-            <h1 id="Hébergements">Hébergements à Marseille</h1>
-            <figure>
-                <img src="ProjetReservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="VieuxPort" />
-                <figcaption>Auberge la Cannebière <br />
-                Nuit à partir de 25€ <br />
-                logo
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="ProjetReservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="VieuxPort" />
-                <figcaption>Hôtel du port <br />
-                Nuit à partir de 52€ <br />
-                logo
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="ProjetReservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="VieuxPort" />
-                <figcaption>Hôtel les mouettes <br />
-                Nuit à partir de 76€ <br />
-                logo
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="ProjetReservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="VieuxPort" />
-                <figcaption>Hôtel de la mer <br />
-                Nuit à partir de 46€ <br />
-                logo
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="ProjetReservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="VieuxPort" />
-                <figcaption>Auberge le panier <br />
-                Nuit à partir de 23€ <br />
-                logo
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="ProjetReservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="VieuxPort" />
-                <figcaption>Hôtel chez Amina <br />
-                Nuit à partir de 96€ <br />
-                logo
-                </figcaption>
-            </figure>
-            Afficher plus
+        <section id="bloc">
+            <div id="bloc_heb">
+                <h1 id="Hébergements">Hébergements à Marseille</h1>
+                <figure>
+                    <img src="ProjetReservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="VieuxPort" />
+                    <figcaption>Auberge la Cannebière <br />
+                    Nuit à partir de 25€ <br />
+                    logo
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="ProjetReservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="VieuxPort" />
+                    <figcaption>Hôtel du port <br />
+                    Nuit à partir de 52€ <br />
+                    logo
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="ProjetReservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="VieuxPort" />
+                    <figcaption>Hôtel les mouettes <br />
+                    Nuit à partir de 76€ <br />
+                    logo
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="ProjetReservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="VieuxPort" />
+                    <figcaption>Hôtel de la mer <br />
+                    Nuit à partir de 46€ <br />
+                    logo
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="ProjetReservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="VieuxPort" />
+                    <figcaption>Auberge le panier <br />
+                    Nuit à partir de 23€ <br />
+                    logo
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="ProjetReservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="VieuxPort" />
+                    <figcaption>Hôtel chez Amina <br />
+                    Nuit à partir de 96€ <br />
+                    logo
+                    </figcaption>
+                </figure>
+                Afficher plus
+            </div>
         <aside>
             <h2>Les plus populaires          <i class="fas fa-chart-line"></i></h2>
             <figure>
@@ -111,53 +117,56 @@
         </section> 
 
         <section>
-            <h1 id="Activités">Activités à Marseille</h1>
-                <figure>
-                    <img src="ProjetReservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="VieuxPort" />
-                    <figcaption>Vieux Port</figcaption>
-                </figure>
-                <figure>
-                    <img src="ProjetReservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="FortDePomègues" />
-                    <figcaption>Fort de Pomègues</figcaption>
-                </figure>
-                <figure>
-                    <img src="ProjetReservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="IlesDuFrioul" />
-                    <figcaption>îles du Frioul</figcaption>
-                </figure>
-                <figure>
-                    <img src="ProjetReservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanque" />
-                    <figcaption>Parc National des Calanques</figcaption>
-                </figure>
-                <figure>
-                    <img src="ProjetReservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="NotreDame" />
-                    <figcaption>Notre-Dame-de-la-Garde</figcaption>
-                </figure>
-                <figure>
-                    <img src="ProjetReservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp" />
-                    <figcaption>Parc Longchamp</figcaption>
-                </figure>   
+            <div id="bloc_act">
+                <h1 id="Activités">Activités à Marseille</h1>
+                    <figure>
+                        <img src="ProjetReservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="VieuxPort" />
+                        <figcaption><strong>Vieux Port</strong></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="ProjetReservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="FortDePomègues" />
+                        <figcaption><strong>Fort de Pomègues</strong></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="ProjetReservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="IlesDuFrioul" />
+                        <figcaption><strong>îles du Frioul</strong></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="ProjetReservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanque" />
+                        <figcaption><strong>Parc National des Calanques</strong></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="ProjetReservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="NotreDame" />
+                        <figcaption><strong>Notre-Dame-de-la-Garde</strong></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="ProjetReservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp" />
+                        <figcaption><strong>Parc Longchamp</strong></figcaption>
+                    </figure>
+            </div> 
         </section>
-        
+
         <footer>
-            A propos
+
                 <ul>
+                    <li><strong>A propos</strong></li>
                     <li>Fonctionnement du site</li>
                     <li>Conditions générales de vente</li>
                     <li>Données et confidentialité</li>
                 </ul>
             
-            hébergement
                 <ul>
+                    <li><strong>Hébergements</strong></li>
                     <li>Charte qualité</li>
                     <li>Soumettre votre hôtel</li>
                 </ul>
             
-            Assistance
                 <ul>
+                    <li><strong>Assistance</strong></li>
                     <li>centre d'aide</li>
                     <li>Nous contacter</li>
                 </ul>
-            
+
         </footer>
     </body>
 </html>
