@@ -12,25 +12,135 @@ body {
 #corps {
     margin: 3em;
 }
+#corps li {
+    display: flex;
+    margin-left: 1em;
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none;
+}
+header img {
+    width: 6em;
+    height: 3em;
+    margin-top: -1em;
+}
 header nav {
     display: flex;
     justify-content: space-between;
+}
+#lien a {
+    color: #0065FC;
+    border-top: 0.17em #0065FC solid;
+    padding-top: 3em;
+    margin-top: -4.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+#lien2 {                        
+    padding-left: 3em;
+    margin-right: 4em;
+    margin-top: -1.3em;
+}
+#lien3 {
+    font-weight: 600;
+    margin-top: -1.3em;
 }
 #menu {
     color: #0065FC;
     display: flex;
     margin-bottom: 2em;
 }
-header img {
-    width: 6em;
-    height: 3em;
-}
 nav ul {
     display: flex;
     justify-content: space-between;
 }
+h1 {
+    font-weight: 600;
+    font-size: 1.3em;
+}
+nav p {
+    font-weight: 300;
+    margin-top: -0.5em;
+}
+#champsDeRecherche{
+    display: flex;
+}
+.cadre {
+    border:1em #f2f2f2 solid;
+    background-color: #f2f2f2;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    font-size: 1em;
+    margin-right: -0.7em;
+}
+.champs {
+    margin: 0 -0.5em 0.7em 0.6em;
+    padding: 0 1em 0 1em;
+    font-family: Raleway, sans-serif;
+    border: 1px #f2f2f2 solid;
+}
+.champs::placeholder{
+    color: #000000;
+}
+.bouton {
+    background-color: #0065FC; 
+    color: white;
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+    padding: 0.8em 1em 0.8em 1em;
+    margin: 0em 0 0.7em -0.1em;
+    border: none;
+}
+input {
+    font-weight: 600;
+    font-size: large;
+    margin: auto;
+}
+.circle {
+    border: 1px #deebff solid;
+    background-color: #deebff;
+    margin: -0.9em 0.5em -1em -2.5em;
+    padding: 0.9em;
+    font-size: 1.2em;
+    border-radius: 2em;
+}
+.info {
+    font-size: 12px;
+    border: 1px lightgrey solid;
+    border-radius: 20px;
+    margin: 0 1em -0.5em 1em;
+    padding: 5px 8px 5px 8px
+;
+}
+#filtre {
+    font-weight: 700;
+    font-size: medium;
+    display: flex;
+}
+#filtre p {
+    font-weight: 700;
+    font-size: 1em;
+    padding-top: 3.6em;
+}
+#filtre li {
+    margin: 1em 2em 1.5em 0;
+    display: flex;
+    justify-content: space-between;
+    border: 1px lightgrey solid;
+    border-radius: 2em;
+    padding: 1em 1em 1em 2.3em;
+    z-index:inherit;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+#filtre a:hover {
+    text-decoration: underline;
+    color: #0065FC;
+}
 aside {
-    margin-left: 2em;
     border: 1px #f2f2f2 solid;
     background-color: #f2f2f2;
     border-radius: 1em;
@@ -41,19 +151,6 @@ aside img {
     width: 120px;
     height: 120px;
 }
-footer {
-
-    display: flex;
-    background-color: #f2f2f2;
-    text-align: justify;
-    }
-ul {
-    list-style-type: none;
-}
-section {
-    display: flex;
-    justify-content: space-between;
-}
 aside article {
     display: flex;
     border: 1px white solid;
@@ -61,31 +158,44 @@ aside article {
     background-color: white;
 } 
 #bloc {
+    margin: 2.5em 2em 3em 0;
     display: flex;
 }
 #bloc_hebergement {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1em 1em 1em 3em;
     border: 1px #f2f2f2 solid;
     border-radius: 1em;
     background-color: #f2f2f2;
 }
+#bloc1 {
+    display: flex;
+    margin-left: -1.32em;
+}
+#bloc2 {
+    display: flex;
+    margin-left: -1.32em;
+}
 #bloc_hebergement article {
     border: 1px white solid;
     background-color: white;
-    border-radius: 1em;
-
+    border-radius: 2em;
+    margin: 1em 1em 1em 1em;
+    padding: 0.3em 0.3em 0.1em 0.3em;
 }
 #bloc_activites {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+#lastBloc {
+    display: flex;
 }
 #bloc_hebergement img {
-    width: 300px;
-    height: 150px;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+    width: 250px;
+    height: 120px;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
 }
 #bloc_activites article {
     border: 1px white;
@@ -98,94 +208,20 @@ aside article {
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
 }
-#filtre {
-    font-weight: 700;
-    font-size: medium;
-    font-size-adjust: initial;
-    display: flex;
-    justify-content: baseline;
-}
-#filtre p {
-    padding-top: 2em;
-}
-#filtre li {
-    margin: 1em 0.5em 1.5em 0;
-    display: flex;
-    justify-content: space-between;
-    border: 2px lightgrey solid;
-    border-radius: 2em;
-    padding: 1em 2em 1em 2.3em;
-}
-#lien a {
-    color: #0065FC;
-    border-top: 0.1em #0065FC solid;
-    padding-top: 4.3em;
-    margin-top: -4.5em;
-    padding-right: 1em;
-    padding-left: 1em;
-}
-#lien2 {                        
-    padding-left: 3em;
-    margin-right: 4em;
-}
-#lien3 {
-    font-weight: 600;
-}
-a {
-    text-decoration: none;
-    color:black;
-}
-#filtre a:hover {
-    text-decoration: underline;
-    color: #0065FC;
-}
-#corps li {
-    display: flex;
-    margin-left: 1em;
-    justify-content: space-between;
-}
 .blue {
     color: #0065FC;
 }
 .grey {
     color: lightgrey;
 }
-.circle {
-    border: 2px #deebff solid;
-    background-color: #deebff;
-    margin: -0.9em 0.5em -1em -2.5em;
-    padding: 0.8em;
-    font-size: 1.3em;
-    border-radius: 5em;
+h3 {
+    font-weight: 590;
 }
-input {
-    font-weight: 600;
-    font-size: large;
-    margin: auto;
+.fa-star {
+    font-size: small;
 }
-.bouton {
-    background-color: #0065FC;
-    color: white;
-    border-bottom-right-radius: 1em;
-    border-top-right-radius: 1em;
-    padding: 0.8em 1em 0.7em 1em;
-}
-.champs {
-    padding: 0.6em 3em 0.6em 1em;
-    margin: -5em 1em 1em 1em;
-    font-family: Raleway, sans-serif;
-}
-.cadre {
-    border:20px #f2f2f2 solid;
-    border-bottom-left-radius: 1em;
-    border-top-left-radius: 1em;
-    font-size: 1.2em;
-}
-h1 {
-    font-weight: 600;
-    font-size: 1.3em;
-}
-nav p {
-    font-weight: 300;
-    margin-top: -0.5em;
+footer {
+    display: flex;
+    background-color: #f2f2f2;
+    text-align: justify;
 }

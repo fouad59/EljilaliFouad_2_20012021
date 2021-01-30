@@ -19,16 +19,16 @@
                 </ul>
             </nav>
         </header>
-        <nav>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p> 
-            <form action="#">
-                <div>
+            <nav>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p> 
+                <form action="#">
+                <div id="champsDeRecherche">
                     <label><i class="fas fa-map-marker-alt cadre"></i></label>
                     <input type="text" name="Ville" placeholder="Marseille, France" class="champs"/>
                     <input type="submit" value="Rechercher" class="bouton"/>
                 </div>
-            </form>
+                </form>
                 <div id="filtre">
                     <p> Filtres</p>
                     <ul>
@@ -39,13 +39,14 @@
                     </ul>
                 </div>
 
-                    <i class="fas fa-info blue"></i> Plus de 500 logements sont disponibles dans cette ville  
-        </nav>
+                    <i class="fas fa-info blue info "></i> Plus de 500 logements sont disponibles dans cette ville  
+            </nav>
 
         <section id="bloc">
             <div id="bloc_hebergement">
                 <h2 id="hebergements">Hébergements à Marseille</h2>
-                <article>
+                <div id="bloc1">
+                    <article>
                     <a href="#">
                     <img src="images/aubergeLaCannebiere.jpg" alt="VieuxPort" />
                     <h3>Auberge la Cannebière</h3>
@@ -58,8 +59,8 @@
                         <i class="fas fa-star grey"></i>
                     </p>
                     </a>
-                </article>
-                <article>
+                    </article>
+                    <article>
                     <a href="#">
                     <img src="images/hotelDuPort.jpg" alt="VieuxPort" />
                     <h3>Hôtel du port </h3>
@@ -71,10 +72,9 @@
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star blue"></i>
                     </p>
-                    </a>
-                    
-                </article>
-                <article>
+                    </a>  
+                    </article>
+                    <article>
                     <a href="#">
                     <img src="images/hotelLesMouettes.jpg" alt="VieuxPort" />
                     <h3>Hôtel les mouettes </h3>
@@ -86,10 +86,11 @@
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star grey"></i>
                     </p>
-                    </a>
-                    
-                </article>
-                <article>
+                    </a>   
+                    </article>
+                </div>
+                <div id="bloc2">
+                    <article>
                     <a href="#">
                     <img src="images/hotelDeLaMer.jpg" alt="VieuxPort" />
                     <h3>Hôtel de la mer </h3>
@@ -101,10 +102,9 @@
                         <i class="fas fa-star grey"></i>
                         <i class="fas fa-star grey"></i>
                     </p>
-                    </a>
-                   
-                </article>
-                <article>
+                    </a>  
+                    </article>
+                    <article>
                     <a href="#">
                     <img src="images/aubergeLePanier.jpg" alt="VieuxPort" />
                     <h3>Auberge le panier </h3>
@@ -116,10 +116,9 @@
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star grey"></i>
                     </p>
-                    </a>
-                   
-                </article>
-                <article>
+                    </a>  
+                    </article>
+                    <article>
                     <a href="#">
                     <img src="images/hotelChezAmina.jpg" alt="VieuxPort" />
                     <h3>Hôtel chez Amina </h3>
@@ -131,63 +130,63 @@
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star blue"></i>
                     </p>
-                    </a>
-                    
-                </article>
-
-            <p> Afficher plus </p>
+                    </a>   
+                    </article>
+                </div>
+                <p> Afficher plus </p>
             </div>
-        <aside>
-            <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
-            <article>
-                <a href="#">
-                <img src="images/hotelLeSoleilDuMatin.jpg" alt="VieuxPort" />
-                <h3>Hôtel Le soleil du matin </h3>
-                <p>Nuit à partir de 126€ </p>
-                <p>
+            <aside>
+                <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
+                <article>
+                    <a href="#">
+                    <img src="images/hotelLeSoleilDuMatin.jpg" alt="VieuxPort" />
+                    <h3>Hôtel Le soleil du matin </h3>
+                    <p>Nuit à partir de 126€ </p>
+                    <p>
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star blue"></i>
                     </p> 
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                <img src="images/AuCoeurDeLeau.jpg" alt="VieuxPort" />
-                <h3>Au coeur de l'eau </h3>
-                <p>  Chambres d'hôtes </p>
-                <p> Nuit à partir de 71€ </p>
-                <p>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                    <img src="images/AuCoeurDeLeau.jpg" alt="VieuxPort" />
+                    <h3>Au coeur de l'eau </h3>
+                    <p>  Chambres d'hôtes </p>
+                    <p> Nuit à partir de 71€ </p>
+                    <p>
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star grey"></i>
                     </p>
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                <img src="images/hotelToutBleu.jpg" alt="VieuxPort" />
-                <h3>Hôtel tout bleu et Blanc </h3>
-                <p> Nuit à partir de 68€ </p>
-                <p>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                    <img src="images/hotelToutBleu.jpg" alt="VieuxPort" />
+                    <h3>Hôtel tout bleu et Blanc </h3>
+                    <p> Nuit à partir de 68€ </p>
+                    <p>
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star grey"></i>
                     </p>
-                </a>
-            </article>
-        </aside>
+                    </a>
+                </article>
+            </aside>
         </section> 
 
         <section>
             <div id="bloc_activites">
                 <h1 id="activites">Activités à Marseille</h1>
+                <div id="lastBloc">
                     <article>
                         <a href="#">
                         <img src="images/vieuxPort.jpg" alt="VieuxPort" />
@@ -224,6 +223,7 @@
                         <h3>Parc Longchamp</h3>
                         </a>
                     </article>
+                </div>
             </div> 
         </section>
 
