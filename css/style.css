@@ -1,3 +1,4 @@
+/* Définition de la police */
 @font-face {
     font-family: 'Raleway';
     src: url('Raleway/Raleway-VariableFont_wght.ttf')
@@ -9,6 +10,7 @@ body {
     width: screen;
     font-family: Raleway, sans-serif;
 }
+/* Corps */
 #corps {
     margin: 3em;
 }
@@ -17,21 +19,20 @@ body {
     margin-left: 1em;
     justify-content: space-between;
 }
-ul {
-    list-style-type: none;
-}
+/* Header */
 header img {
     width: 6em;
     height: 3em;
     margin-top: -1em;
 }
+/* Navigation */
 header nav {
     display: flex;
     justify-content: space-between;
 }
 #lien a {
     color: #0065FC;
-    border-top: 0.17em #0065FC solid;
+    border-top: 0.1em #0065FC solid;
     padding-top: 3em;
     margin-top: -4.5em;
     padding-right: 1em;
@@ -63,6 +64,7 @@ nav p {
     font-weight: 300;
     margin-top: -0.5em;
 }
+/* Champs de recherche */
 #champsDeRecherche{
     display: flex;
 }
@@ -97,6 +99,31 @@ input {
     font-size: large;
     margin: auto;
 }
+#filtre {
+    font-weight: 700;
+    font-size: medium;
+    display: flex;
+}
+#filtre p {
+    font-weight: 700;
+    font-size: 1em;
+    padding-top: 3.6em;
+}
+#filtre li {
+    margin: 1em 2em 1.5em 0;
+    border: 1px lightgrey solid;
+    border-radius: 2em;
+    padding: 1em 1em 1em 2.3em;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+#filtre a:hover {
+    text-decoration: underline;
+    color: #0065FC;
+}
+/* information */
 .circle {
     border: 1px #deebff solid;
     background-color: #deebff;
@@ -113,32 +140,7 @@ input {
     padding: 5px 8px 5px 8px
 ;
 }
-#filtre {
-    font-weight: 700;
-    font-size: medium;
-    display: flex;
-}
-#filtre p {
-    font-weight: 700;
-    font-size: 1em;
-    padding-top: 3.6em;
-}
-#filtre li {
-    margin: 1em 2em 1.5em 0;
-    display: flex;
-    justify-content: space-between;
-    border: 1px lightgrey solid;
-    border-radius: 2em;
-    padding: 1em 1em 1em 2.3em;
-}
-a {
-    text-decoration: none;
-    color:black;
-}
-#filtre a:hover {
-    text-decoration: underline;
-    color: #0065FC;
-}
+/* section hébergements */
 #bloc {
     margin-top: 2.5em;
     padding-bottom: 1em;
@@ -180,9 +182,9 @@ a {
 #afficher {
     font-weight: 600;
 }
+/* aside */
 .note {
     font-size: 0.9em;
-
 }
 .centrer {
     margin-left: 1em;
@@ -237,6 +239,7 @@ aside .fa-star {
     margin-left: 1em;
     margin-top: 0.9em;
 }
+/* section activités */
 #bloc_activites article {
     border: 1px white;
     border-radius: 1em;
@@ -272,6 +275,7 @@ aside .fa-star {
     flex-direction: column;
     justify-content: space-between;
 }
+/* Eléments de la page */
 .blue {
     color: #0065FC;
 }
@@ -291,6 +295,10 @@ h3 {
     font-size: 0.8em;
     margin-right: -0.25em;
 }
+ul {
+    list-style-type: none;
+}
+/* Footer */
 footer {
     display: flex;
     background-color: #f2f2f2;
