@@ -130,7 +130,6 @@ input {
     border: 1px lightgrey solid;
     border-radius: 2em;
     padding: 1em 1em 1em 2.3em;
-    z-index:inherit;
 }
 a {
     text-decoration: none;
@@ -157,16 +156,18 @@ a {
 #bloc_hebergement img {
     width: 230px;
     height: 110px;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+    border-top-left-radius: 1.1em;
+    border-top-right-radius: 1.1em;
 }
 #bloc_hebergement article {
     border: 1px white solid;
     background-color: white;
+    height: 190px;
+    font-size: 0.8em;
     border-radius: 1.5em;
     box-shadow: 1px 1px 9px lightgrey;
-    margin: 0.5em 1.2em 1em 1em;
-    padding: 0.3em 0.3em 0 0.3em;
+    margin: 0.5em 1.2em 2em 1em;
+    padding: 0.3em 0.3em 0em 0.3em;
 }
 #bloc1 {
     display: flex;
@@ -176,8 +177,15 @@ a {
     display: flex;
     margin-left: -1.32em;
 }
+#afficher {
+    font-weight: 600;
+}
 .note {
-    font-size: 0.8em;
+    font-size: 0.9em;
+
+}
+.centrer {
+    margin-left: 1em;
 }
 .populaires {
     display: flex;
@@ -195,6 +203,8 @@ aside {
     border: 1px #f2f2f2 solid;
     background-color: #f2f2f2;
     border-radius: 1em;
+    padding: 0 2em 0 2em;
+    margin: 0 2em 0 2em;
 }
 aside img {
     margin: 0.3em 1em 0.3em 0.3em;
@@ -205,9 +215,12 @@ aside img {
 }
 aside article {
     border: 1px white solid;
-    border-radius: 1em;
+    border-radius: 1.5em;
     background-color: white;
     margin-bottom: 2em;
+}
+aside .fa-star {
+    margin-bottom: -2.2em;
 }
 #bloc_activites {
     display: flex;
@@ -234,7 +247,7 @@ aside article {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 300px;
-    height: 380px;
+    height: 360px;
 }
 .miphoto {
     border-top-left-radius: 20px;
@@ -269,10 +282,13 @@ h2 {
     font-weight: 600;
 }
 h3 {
-    font-weight: 580;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-top: 0.4em;
+    margin-bottom: -0.4em;
 }
 .fa-star {
-    font-size: small;
+    font-size: 0.8em;
     margin-right: -0.25em;
 }
 footer {
