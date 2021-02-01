@@ -455,6 +455,11 @@ nav h1, p {
     margin-bottom: -0.7em;
 }
     /* Activités @ */
+#lastBloc {
+    display: flex;
+    flex-direction:column;
+    margin: auto;
+}
 .bigphoto, .miphoto, .smallphoto {
     width: 330px;
     height: 130px;
