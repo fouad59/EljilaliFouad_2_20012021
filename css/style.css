@@ -1,7 +1,7 @@
 /* Définition de la police */
 @font-face {
     font-family: 'Raleway';
-    src: url('Raleway/Raleway-VariableFont_wght.ttf')
+    src: url('Raleway/static/');
 }
 body {
     display: flex;
@@ -32,7 +32,7 @@ header nav {
 }
 #lien a {
     color: #0065FC;
-    border-top: 0.1em #0065FC solid;
+    border-top: 0.15em #0065FC solid;
     padding-top: 3em;
     margin-top: -4.5em;
     padding-right: 1em;
@@ -99,6 +99,7 @@ input {
     font-size: large;
     margin: auto;
 }
+/* filtres */
 #filtre {
     font-weight: 700;
     font-size: medium;
@@ -111,7 +112,7 @@ input {
 }
 #filtre li {
     margin: 1em 2em 1.5em 0;
-    border: 1px lightgrey solid;
+    border: 2px lightgrey solid;
     border-radius: 2em;
     padding: 1em 1em 1em 2.3em;
 }
@@ -184,7 +185,10 @@ a {
 }
 /* aside */
 .note {
-    font-size: 0.9em;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .centrer {
     margin-left: 1em;
@@ -195,6 +199,8 @@ a {
 .note h3 {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: -2em;
+    
 }
 aside h2 {
     display: flex;
@@ -220,9 +226,6 @@ aside article {
     border-radius: 1.5em;
     background-color: white;
     margin-bottom: 2em;
-}
-aside .fa-star {
-    margin-bottom: -2.2em;
 }
 #bloc_activites {
     display: flex;
@@ -250,16 +253,16 @@ aside .fa-star {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 300px;
-    height: 360px;
+    height: 325px;
 }
 .miphoto {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 300px;
-    height: 180px;
+    height: 150px;
 }
 .moyen {
-    height: 235px;
+    height: 200px;
 }
 .smallphoto {
     border-top-left-radius: 20px;
@@ -279,6 +282,10 @@ aside .fa-star {
 .blue {
     color: #0065FC;
 }
+.search {
+    display: none;
+}
+
 .grey {
     color: lightgrey;
 }
@@ -312,3 +319,16 @@ footer li {
     margin-top: 0.8em;
 }
 /* responsive design */
+@media all and (max-width: 1024px)
+{
+#bloc {
+    display: flex;
+    flex-direction: column;
+}
+.search {
+    display: flex;
+}.none {
+    display: none;
+}
+
+}
