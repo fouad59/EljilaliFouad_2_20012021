@@ -508,6 +508,15 @@ footer li {
         font-weight: 700;
         margin-top: 0.7em;
     }
+        /* Footer */
+    footer ul {
+        margin: 2em 2em 2em 2em;
+        font-size: medium;
+    }
+    footer li {
+        font-weight: 300;
+        margin-top: 0.8em;
+    }
 }
     /* responsive smartphone design */
 @media all and (max-device-width: 699px) {
