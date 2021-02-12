@@ -153,6 +153,7 @@ a {
     margin-top: 2.5em;
     padding-bottom: 1em;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;   
 }
 #bloc_hebergement {
@@ -197,7 +198,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
 }
-.centrer {
+.text_centrer {
     margin-left: 1em;   /* decale le contenu par rapport à l'image */
 }
 .populaires {
@@ -205,8 +206,7 @@ a {
 }
 .legend h3 {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: -2em;   
+    flex-wrap: wrap; 
 }
 aside h2 {
     display: flex;
@@ -223,8 +223,8 @@ aside img {
     margin: 0.3em 1em 0.3em 0.3em;
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
-    width: 130px;
-    height: 130px;
+    width: 8.1em;
+    height: 8.1em;
 }
 aside article {
     border: 1px white solid;
@@ -442,14 +442,11 @@ footer li {
     section aside {
         flex-direction: row;
         border: none;
-        margin: 1em -1em 0 -1em;
+        margin: 1em -3em 0 -2.4em;
         border-radius: 0;
     }
     nav h1, p {
         margin-top: -0.1em;
-    }
-    aside {
-        margin: auto;
     }
         /* Hébergements @ tablette */
     #bloc_hebergement img {
@@ -464,12 +461,12 @@ footer li {
         margin-left: -2em;
         margin-bottom: -4em;
     }
-    .centrer p {
+    .text_centrer p {
         margin-top: 1em;
         margin-bottom: -0.7em;
         margin-left: 1em;
     }
-    .centrer h3 {
+    .text_centrer h3 {
         margin-left: 1em;
     }
     #bloc_hebergement article {
@@ -488,17 +485,17 @@ footer li {
     }
     .mini {
         flex-direction: row;
-        margin-right: -2em;
+        margin-right: -4em;
     }
     .bigphoto, .miphoto, .smallphoto {
         height: 9em;
-        width: 17em;
+        width: 17.5em;
         border-top-left-radius: 1.5em;
         border-top-right-radius: 1.5em;
     }
     #last_bloc article {
         height: 12.5em;
-        width: 17em;
+        width: 17.5em;
         margin-right: 2em;
         margin-bottom: 2em;
         border-radius: 1.5em;
@@ -509,8 +506,12 @@ footer li {
         margin-top: 0.7em;
     }
         /* Footer */
+    footer {
+        margin-left: -0.5em;
+        margin-right: -1em;
+    }
     footer ul {
-        margin: 2em 2em 2em 2em;
+        margin-left: auto;
         font-size: medium;
     }
     footer li {
@@ -695,13 +696,13 @@ footer li {
         flex-direction: column;
         margin: 0 -2em 0 -3em;
     }
-    .centrer p {
+    .text_centrer p {
         font-size: xx-large;
         margin-top: 1em;
         margin-bottom: -0.7em;
         margin-left: 1em;
     }
-    .centrer h3 {
+    .text_centrer h3 {
         font-size: 3em;
         margin-left: 1em;
     }
