@@ -640,7 +640,7 @@ footer li {
     section aside {
         justify-content: flex-start;
         border: none;
-        margin: 1em -1em 0 -1em;
+        margin: 1em -5em 0 -2.5em;
         border-radius: 0;
     }
     aside img {
@@ -652,11 +652,12 @@ footer li {
     }
     aside h2 {
         font-size: 3em;
+        margin: 2em 1.2em 1em 0.8em;
     }
     aside article {
         border-radius: 2.7em;
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: 2em;
+        margin-right: 3em;
     }
     .legend {
         font-size: 1.7em;
@@ -666,9 +667,6 @@ footer li {
     }
     nav h1, p {
         margin-top: -0.1em;
-    }
-    aside {
-        margin: auto;
     }
         /* Hébergements @ */
     #hebergements {
@@ -754,17 +752,17 @@ footer li {
     }
         /* Footer @ */
     footer {
-        display: flex;
+        justify-content: left;
         flex-direction: column;
         margin-top: 3em;
         padding-top: 3em;
+        margin-right: -2.7em;
     }
     footer li {
         font-size: 2em;
     }
     footer ul {
-        margin-top: 3em;
-        margin-bottom: 3em;
+        margin-left: 1em;
     }
         /* Elements @ */
     .fa-star {
