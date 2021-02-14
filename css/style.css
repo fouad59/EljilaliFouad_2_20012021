@@ -322,7 +322,7 @@ footer li {
     margin-top: 0.8em;
 }
     /* responsive tablette design */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
     header img {
         width: 10em;
         height: 5em;
@@ -519,7 +519,7 @@ footer li {
     }
 }
     /* responsive smartphone design */
-@media only screen and (max-device-width: 767px) {
+@media all and (orientation: portrait) {
     /* LOGO du site @ */
     header img {
         width: 14em;
