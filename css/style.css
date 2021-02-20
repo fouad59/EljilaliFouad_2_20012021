@@ -399,7 +399,7 @@ ul {
         justify-content: center;
     }
     .legend {
-        font-size: auto;
+        font-size: 0.9em;
     }
     .populaires {
         height: 10em;
