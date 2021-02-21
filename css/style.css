@@ -1,3 +1,4 @@
+        /* grand ecran */
 body {
     font-family: Raleway, sans-serif;
 }
@@ -14,11 +15,12 @@ body nav {
     margin: 2em 0 1em 0;
 }
 #menu ul {
+    width: 100%;
     display: flex;
+    justify-content: flex-end;
 }
 #menu li {
     display: flex;
-    margin-right: 2em;
     margin-top: 2em;
 }
 .menu_style a {
@@ -32,8 +34,9 @@ body nav {
     border-top: 0.2em #0065fc solid;
     border-collapse: separate;
 }
-#sinscrire  a {
-    padding-left: 1em;
+#sinscrire {
+    margin: 3em;
+    margin-left: 2em;
     font-weight: 600;
     color: #0065fc;
     text-decoration: none;
@@ -360,6 +363,7 @@ ul {
     list-style-type: none;
 }
 @media all and (min-width: 701px) and (max-width: 1024px) {
+
             /* header @ tablette */
     #menu ul {
         flex-wrap: wrap;
@@ -419,12 +423,12 @@ ul {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    #last_block :nth-child(2) {
-        order: 1;
+    .row_activites {
+        display: contents;
     }
     .big_picture, .calanques, .pomegues, .frioul, .notre_dame, .longchamp {
         height: 13em;
-        width: 19em;
+        width: 18em;
         margin-right: 2em;
         margin-bottom: 1em;
     }
@@ -444,42 +448,39 @@ ul {
         display: initial;
     }
 }
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     #menu {
         flex-wrap: wrap;
         margin: 0;
         width: 100%;
     }
     #menu img {
-        margin-bottom: -1em;
+        order: -1;
+        margin: 1em;
+        margin-bottom: 0;
+    }
+    .left {
+        margin: 0;
     }
     #menu ul {
-        width: 80%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
     }
     .menu_style a {
-        font-size: 1.2em;
-        margin-left: -3em;
-        padding-left: 2em;
-        padding-right: 2em;
         border-bottom: 0.2em #f2f2f2 solid;
-        padding-bottom: 1em;
+        padding-bottom: 0.8em;
+        font-size: 1em;
     }
     .menu_style a:hover {
         border-top: none;
         border-bottom: 0.2em #0065fc solid;
-        border-collapse: separate;
     }
-    .left {
-        padding-right: 4.5em;
-    }
-    .right {
-        padding-left: 2em;
-        margin-left: -5em;
-    }
-    #sinscrire a {
-        position: relative;
-        top: -4em;
-        left: -7em;
+    #menu #sinscrire {
+        font-size: 1.1em;
+        order: -1;
+        justify-content: flex-end;
+        margin: 2em 0 0 0;
     }
         /* Title @ smartphone */
     h1 {
