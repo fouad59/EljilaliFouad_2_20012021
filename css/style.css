@@ -358,7 +358,8 @@ figcaption {
     margin: 1em;
 }
 .fa-star {
-    font-size: 0.9em;
+    font-size: 0.84em;
+    margin-right: -0.2em;
 }
 .color-logo {
     color: #0065fc;
@@ -671,6 +672,15 @@ ul {
     }
     h1 {
         font-size: 1.1em;
+    }
+    .legend .fa-star {
+
+    }
+    .legend h3 {
+        margin-bottom: 0.5em;
+    }
+    .legend {
+        margin-right: 0;
     }
 }
 }
