@@ -1,6 +1,7 @@
         /* grand ecran */
 body {
     font-family: Raleway, sans-serif;
+    margin: auto;
 }
 body nav {
     margin-left: 3em;
@@ -25,7 +26,7 @@ body nav {
 .menu_style a {
     text-decoration: none;
     color: black;
-    padding: 3.3em 1.5em 0 1.5em;
+    padding: 2.8em 1.5em 0 1.5em;
 }
 .menu_style a:hover{
     color: #0065fc;
@@ -118,7 +119,10 @@ form{
     font-size: 1.2em;
     margin-top: -0.6em;
     margin-right: 0.6em;
-    padding: 0.5em 0.5em 0.5em 0.5em;
+    padding: 0.5em;
+}
+.fa-child {
+    padding: 0.48em 0.6em;
 }
         /* ligne d'information */
 #information {
@@ -290,7 +294,7 @@ figure {
     border-radius: 1.2em;
     box-shadow: 0.3em 0.3em 1em lightgrey;
     margin: auto;
-    margin-right: 3em;
+    margin-right: 2.9em;
 }
 .row_activites {
     display: flex;
@@ -299,39 +303,39 @@ figure {
 }
 .big_picture {
     height: 100%;
-    width: 18.7em;
+    width: 19em;
 }
 .big_picture img {
     height: 87%;
 }
 .calanques {
     height: 100%;
-    width: 18.7em;
+    width: 19em;
 }
 .calanques img {
     height: 87%;
 }
 .pomegues {
     height: 14.5em;
-    width: 18.7em;
+    width: 19em;
 }
 .pomegues img {
     height: 11em;
 }
 .frioul {
     height: 10em;
-    width: 18.7em;
+    width: 19em;
 }
 .frioul img {
     height: 6.5em;
 }
 .notre_dame {
     height: 12em;
-    width: 18.7em;
+    width: 19em;
 }
 .longchamp {
     height: 12.5em;
-    width: 18.7em;
+    width: 19em;
 }
         /* FOOTER */
 footer{
@@ -370,7 +374,7 @@ figcaption {
 ul {
     list-style-type: none;
 }
-@media all and (min-width: 701px) and (max-width: 1024px) {
+@media all and (min-width: 688px) and (max-width: 1432px) {
 
             /* header @ tablette */
     #menu ul {
@@ -456,7 +460,12 @@ ul {
         display: initial;
     }
 }
-@media screen and (max-width: 700px) {
+@media all and (min-width: 1441px) {
+    .block_activites {
+        margin: auto;
+    }
+}
+@media screen and (max-width: 687px) {
     body {
         margin: 0;
     }
@@ -568,7 +577,11 @@ ul {
         width: 100%;
         border-radius: 0;
     }
+    .populaires a {
+        max-width: 540px;
+    }
     .populaires {
+        max-width: 560px;
         height: 9em;
         width: 89%;
         margin-left: 1.5em;
@@ -578,6 +591,7 @@ ul {
         margin: 0 2em 0 1.2em;
     }
     aside img {
+        max-width: 160px;
         height: 100%;
         width: 8em;
         margin: 0.22em;
@@ -606,6 +620,7 @@ ul {
         font-size: 1.4em;
     }
     .block_hebergements section {
+        max-width: 480px;
         height: 13em;
         width: 110%;
         margin: 0.5em 0;
@@ -632,11 +647,13 @@ ul {
     .big_picture, .calanques, .pomegues, .frioul, .notre_dame, .longchamp {
         height: 13em;
         width: 100%;
+        max-width: 480px;
         margin-top: 1em;
         margin-bottom: 0.5em;
         margin-left: -1em;
     }
     .big_picture img, .calanques img, .notre_dame img, .longchamp img, .pomegues img, .frioul img {
+        max-width: 480px;
         height: 75%;
     }
             /* photo change */
